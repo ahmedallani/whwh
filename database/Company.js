@@ -1,0 +1,27 @@
+const mongoose = require("mongoose");
+
+mongoose.Promise = global.Promise;
+
+const CompanySchema = new mongoose.Schema(
+  {
+    name: String,
+    password: String,
+    imageUrl: String,
+    key: String,
+    todos: [
+      {
+        name: String,
+        todo: String,
+      },
+    ],
+    type: String,
+  },
+  {
+    timestamps: true,
+  }
+);
+
+
+const Company = mongoose.model("Company", CompanySchema);
+
+module.exports = Company;
