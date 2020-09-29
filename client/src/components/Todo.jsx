@@ -9,24 +9,27 @@ class Todo extends React.Component {
     
     render() {
         return (
-            <div className="todoList">
+            <div>
                 <div className="myTodo">
-                    <p>WHAT I DO TODAY ??<input type="text" placeholder="my Todo"></input></p>
+                    <p>WHAT I DO TODAY ??</p><br/><input type="text" placeholder="my Todo"></input>
                     <button value="TodoButton">APPLY</button>
                 </div>
-                <div>
+                <div className="todoList">
                     <h1>EMPTY LIST HERE</h1>
                 </div>
-                <div>
-                    <p>Choose HERE : 
-                        <select placeholder="Choose your friend">
+                <div className="friendAdd">
+                    Choose HERE : 
+                        <select placeholder="Choose your friend" className="friendList">
                             <option>Friend1</option>
                             <option>Friend2</option>
                             <option>Friend3</option>
                             <option>--- Select ALL --- </option>
                         </select>
-                    </p> WHAT YOU WANT YOUR FRIEND TO DO :
-                        <input type="text"></input>
+                        <br/>
+                        <br/>
+                        <br/>
+                     WHAT YOU WANT YOUR FRIEND TO DO :
+                        <input type="text" className="friendList"></input>
                     <button>GET HIM!</button>
                 </div>
             </div>
