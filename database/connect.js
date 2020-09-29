@@ -1,15 +1,5 @@
-var mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
- mongoose.connect("mongodb://localhost:27017/whwhproject", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-var db = mongoose.connection
+const db = mongoose.connect('mongodb://localhost/whwh', {useNewUrlParser: true,useUnifiedTopology: true});
 
-db.on('error', function() {
-  console.log('mongoose connection error');
-});
-
-db.once('open', function() {
-  console.log('mongoose connected successfully');
-});
+module.exports = db;

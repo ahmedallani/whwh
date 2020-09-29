@@ -1,6 +1,6 @@
 const db = require("./connect.js");
-const User = require("./User.js");
-const Company = require("./Company.js")
+const User = require("./user.js");
+const Company = require("./company.js")
 
 const sampleUser = [
     {
