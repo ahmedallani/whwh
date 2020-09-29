@@ -12,7 +12,7 @@ class Home extends React.Component{
     }
     componen() {
         $.ajax({
-          url: `/getfriends`,
+          url: `/getall`,
           type: "get",
           success: (res) => {
             this.setState({ array: res });
@@ -23,7 +23,9 @@ class Home extends React.Component{
         this.componen();
       }
     render(){
-        return <h1>HELLO WORLDDDD</h1>
+      var halim = this.state.array[0]
+      console.log(halim)
+        return <h1>HELLO WORLDDD</h1>
     }
 }
 export default Home

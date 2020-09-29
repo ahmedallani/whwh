@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/getall' , function(req , res){
   User.find({},function(error , result ){
-      if(error) console.log(error)
+      if(error) console.log("this is error ====>" , error)
       res.send(result)
   })
 })

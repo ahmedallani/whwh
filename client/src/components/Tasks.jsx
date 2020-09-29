@@ -14,7 +14,7 @@ class Tasks extends React.Component{
                             <option>Name1</option>
                             <option>Name2</option>
                             <option>Name3</option>
-                            <option>--- Select ALL --- </option>
+                            <option>-- Select ALL -- </option>
                         </select>
                     </p>
                     <p>DO WHAT ?

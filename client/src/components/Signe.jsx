@@ -8,7 +8,7 @@ class Signe extends React.Component{
             <form>
             <label>Enter the name</label><br></br>
             <input type="text"/><br></br>
-            <label></label>Enter password<br></br>
+            <label></label>Enter Password<br></br>
             <input type="text"/><br></br>
             </form>
 

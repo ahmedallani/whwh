@@ -9,7 +9,7 @@ class Chat extends React.Component {
         return (
             <div>
                 <div className="chatArea">
-                    YOUR MESSAGES HERE
+                    YOUR MESSAGES HEREe
                 </div>
                 <div className="chatText">
                 <textarea></textarea>

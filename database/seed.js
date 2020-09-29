@@ -5,7 +5,7 @@ const Company = require("./company.js")
 const sampleUser = [
     {
         name: "wala",
-        password: "1234",
+        password: "12345",
         imageUrl: "https://i.pinimg.com/originals/2e/f5/38/2ef538b144db555f8dcd4bbc34c17e84.jpg",
         key: "azerty123",
         myToDoList: ["heloç"],
