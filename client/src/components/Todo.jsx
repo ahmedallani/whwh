@@ -9,7 +9,7 @@ class Todo extends React.Component {
     
     render() {
         return (
-            <div>
+            <div className="todoList">
                 <div className="myTodo">
                     <p>WHAT I DO TODAY ??<input type="text" placeholder="my Todo"></input></p>
                     <button value="TodoButton">APPLY</button>

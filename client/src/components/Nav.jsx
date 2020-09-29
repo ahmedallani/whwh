@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Link, link } from 'react-router-dom'
+import { Link, link } from 'react-router-dom';
 
 class Nav extends React.Component { 
     constructor(props){
@@ -12,13 +12,13 @@ class Nav extends React.Component {
             <a className="logo" href="#"> logo</a>
             <ul className="nav">
                 <Link to="/todo">
-                   <li ><a>todo</a></li>
+                   <li ><a>Todo</a></li>
                 </Link>
                 <Link to="/">
                    <li><a>Home</a></li>
                 </Link>
                 <Link to="/chat">
-                   <li><a>chat</a></li>
+                   <li><a>Chat</a></li>
                 </Link>
             </ul>
         </nav>
