@@ -11,11 +11,11 @@ class Nav extends React.Component {
             <nav>
             <a className="logo" href="#"> logo</a>
             <ul className="nav">
-                <Link to="/todo">
-                   <li ><a>todo</a></li>
-                </Link>
-                <Link to="/">
+            <Link to="/">
                    <li><a>Home</a></li>
+                </Link>
+                <Link to="/todo">
+                   <li ><a>Todo</a></li>
                 </Link>
                 <Link to="/chat">
                    <li><a>chat</a></li>

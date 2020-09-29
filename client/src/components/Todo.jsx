@@ -15,7 +15,7 @@ class Todo extends React.Component {
                     <button value="TodoButton">APPLY</button>
                 </div>
                 <div>
-                    <h1>EMPTY LIST HERE</h1>
+                    <h1>EMPTY LIST HEREe</h1>
                 </div>
                 <div>
                     <p>Choose HERE : 

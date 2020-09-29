@@ -38,7 +38,7 @@ class Login extends React.Component{
            <div>
                 <label>Enter the name</label><br></br>
                 <input type="name" onChange={this.takeName.bind(this)} /><br></br>
-                <label></label>Enter password<br></br>
+                <label></label>Enter passwordd<br></br>
                 <input type="new-password" onChange={this.takePassword.bind(this)} /><br></br>
                 <button onClick={this.check.bind(this)}></button>
                 </div>
