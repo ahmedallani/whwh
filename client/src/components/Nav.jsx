@@ -1,13 +1,16 @@
 import React from "react";
 import axios from "axios";
 import { Link, link } from 'react-router-dom'
-
+import Land from './Landingpage.jsx'
 class Nav extends React.Component { 
     constructor(props){
         super(props)
     }
     render(){
-        return (<div className="nav-bar"> 
+        return (
+        <div>
+        <Land/>
+        {/* <div className="nav-bar"> 
             <nav>
             <a className="logo" href="#"> logo</a>
             <ul className="nav">
@@ -22,6 +25,7 @@ class Nav extends React.Component {
                 </Link>
             </ul>
         </nav>
+        </div> */}
         </div>)
     }
 }

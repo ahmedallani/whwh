@@ -2,10 +2,27 @@ import React from 'React';
 import { BrowserRouter, Route, Switch,Link } from 'react-router-dom';
 
 class Tasks extends React.Component{
-    constructor(props) {
+    constructor(props){
         super(props)
+        this.state = {
+            array : []
+        }
+        this.componen = this.componen.bind(this)
     }
+    componen() {
+        $.ajax({
+          url: `/getall`,
+          type: "get",
+          success: (res) => {
+            this.setState({ array: res });
+          },
+        });
+      }
+      componentWillMount() {
+        this.componen();
+      }
     render() {
+        
         return(
             <div>
                 <div className="Orders">

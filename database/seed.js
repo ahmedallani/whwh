@@ -1,6 +1,7 @@
 const db = require("./connect.js");
 const User = require("./user.js");
 const Company = require("./company.js")
+const Chat = require("./chatschema.js")
 
 const sampleUser = [
     {
@@ -14,7 +15,11 @@ const sampleUser = [
         
     }
 ];
-
+const samplechat = [
+  {
+      msg: "this is message from data base "
+  } 
+];
 const sampleCompany = [
     {
         name: "whwh",
@@ -30,7 +35,10 @@ const sampleCompany = [
         type: "company",
       },
 ];
-
+const insertSampleChat= function() {
+  Chat.create(samplechat)
+    .then(() =>console.log("Chat test"));
+};
 const insertSampleUser= function() {
   User.create(sampleUser)
     .then(() =>console.log("user test"));
@@ -39,6 +47,6 @@ const insertSampleCompany = function () {
     Company.create(sampleCompany)
     .then(() => console.log("company test ") )
 }
-
+insertSampleChat()
 insertSampleUser();
 insertSampleCompany();

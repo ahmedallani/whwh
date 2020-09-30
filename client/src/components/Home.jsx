@@ -23,9 +23,15 @@ class Home extends React.Component{
         this.componen();
       }
     render(){
-      var halim = this.state.array[0]
-      console.log(halim)
-        return <h1>HELLO WORLDDD</h1>
+      var users = []
+      for(var i = 0 ; i < this.state.array.length ; i++){
+      users.push(<li key={i}>{this.state.array[i].name} </li>)
+      }
+        return <div>
+          <ul>
+            {/* {users} */}
+          </ul>
+        </div>
     }
 }
 export default Home
