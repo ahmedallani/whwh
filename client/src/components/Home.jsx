@@ -28,17 +28,27 @@ class Home extends React.Component{
       users.push(<li key={i}>{this.state.array[i].name} </li>)
       // insert a for loop for user image
       }
-        return <div>
-        <ul>
-          {/* {users} */}
+        return (
+    <div id="main">
+          {/* <div>
+          <ul className="userNameList">
           <li>User 1</li>
-          <li><img src=""></li>
+          <li>Image 1</li>
           <li>User 2</li>
           <li>Image 2</li>
           <li>User 3</li>
           <li>Image 3</li>
         </ul>
+          </div>
+        <div>
+          <ul id="userNameListTodo">
+            <li>User 1 Todo</li>
+            <li>User 2 Todo</li>
+            <li>User 3 Todo</li>
+          </ul>
         </div>
+        */}
+        </div>)
     }
 }
 export default Home
