@@ -1,7 +1,7 @@
 import React from 'react'
 import Signe from './Signe.jsx'
 import { Link, link } from 'react-router-dom'
-
+import axios from 'axios'
 class Login extends React.Component{
     constructor(props){
        super(props)
@@ -55,26 +55,21 @@ class Login extends React.Component{
 
     check(){
     
-    //    const {name,password,array}=this.state
-    //    const Password=this.hashCode(password)
-    //    console.log('this is password ======>',Password)
-    //    console.log('this is 7atta chey========>',array[10].password)
-    //    console.log('this is name ======>',name)
-    //    console.log('this is 7atta name========>',array[10].name)
-    //    var count=0;
-        // for(var i=0;i<array.length;i++){
-        //     if(array[i].name===name && array[i].password==Password){
-                
-
-        //         alert('true');
-        //         count++
+       const {name,password,array}=this.state
+     
+       const Password=this.hashCode(password)
+       var count=0;
+        for(var i=0;i<array.length;i++){
+            if(array[i].name===name && array[i].password==Password){
+                axios.post('/update' , name )
+                count++
                 var bol = !this.state.oboli
                 this.setState({oboli : bol})
-        //     }
-        // }
-        // if(!count){
-        //     alert('false'); 
-        // }
+            }
+        }
+        if(!count){
+            alert('false'); 
+        }
     }
 
     render(){
@@ -104,7 +99,7 @@ function NewNav(){
         <nav>
         <a className="logo" href="#"> logo</a>
         <ul className="nav">
-        <Link to="/">
+        <Link to="/home">
                <li><a>Home</a></li>
             </Link>
             <Link to="/todo">
