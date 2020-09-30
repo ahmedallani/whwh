@@ -26,11 +26,18 @@ class Home extends React.Component{
       var users = []
       for(var i = 0 ; i < this.state.array.length ; i++){
       users.push(<li key={i}>{this.state.array[i].name} </li>)
+      // insert a for loop for user image
       }
         return <div>
-          <ul>
-            {/* {users} */}
-          </ul>
+        <ul>
+          {/* {users} */}
+          <li>User 1</li>
+          <li><img src=""></li>
+          <li>User 2</li>
+          <li>Image 2</li>
+          <li>User 3</li>
+          <li>Image 3</li>
+        </ul>
         </div>
     }
 }

@@ -80,7 +80,7 @@ class Login extends React.Component{
     render(){
           
         return (
-           <div>{!this.state.boli ?
+           <div  className="loginBox">{!this.state.boli ?
                <div>
                    { !this.state.oboli ?
                 <div>
