@@ -34,17 +34,17 @@ class Todo extends React.Component {
                     <p>WHAT I DO TODAY ??<input type="text" placeholder="my Todo"></input></p>
                     <button value="TodoButton">APPLY</button>
                 </div>
-                <div>
-                    <h1>EMPTY LIST HEREe</h1>
+                <div className="todoList">
+                    <h1>EMPTY LIST HERE</h1>
                 </div>
-                <div>
+                <div className="friendAdd">
                     <p>Choose HERE : 
-                        <select placeholder="Choose your friend">
+                        <select placeholder="Choose your friend" className="friendList">
                             {users}
                             <option>--- Select ALL --- </option>
                         </select>
                     </p> WHAT YOU WANT YOUR FRIEND TO DO :
-                        <input type="text"></input>
+                        <input type="text" className="friendList"></input>
                     <button>GET HIM!</button>
                 </div>
             </div>

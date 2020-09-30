@@ -25,7 +25,7 @@ class Tasks extends React.Component{
         
         return(
             <div>
-                <div className="Orders">
+                <div   className="Orders">
                     <p>Choose HERE : 
                         <select placeholder="WORKERS NAMES">
                             <option>Name1</option>
@@ -38,7 +38,7 @@ class Tasks extends React.Component{
                         <input type="text" placeholder="TODO"></input>
                     </p>
                 </div>
-                <div>
+                <div classname="companyTodo">
                     <p>EMPTY DIV HERE</p>
                 </div>
             </div>
