@@ -12,6 +12,7 @@ class App extends React.Component{
     }
     render(){
         return (
+            <div>
         <Router>
         <div>
             <Nav /> 
@@ -22,6 +23,7 @@ class App extends React.Component{
             </Switch>
         </div>
     </Router>
+    </div>
         )
     }
 }

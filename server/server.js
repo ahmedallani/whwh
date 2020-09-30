@@ -18,7 +18,48 @@ app.get('/getall' , function(req , res){
       res.send(result)
   })
 })
-
+app.post('/post',(req,res)=>{
+  // console.log(req.body);
+  
+  const obj={
+    name:req.body.name,
+    password:req.body.Password,
+    imageUrl:req.body.image,
+    key:req.body.key,
+    myToDoList:[],
+    companyToDoList:[],
+    type:'user'
+  }
+  console.log(obj)
+const newUser= new User(obj)
+newUser.save((err,result)=>{
+  res.send(result)
+})
+  
+})
+app.post('/postC',(req,res)=>{
+  // console.log(req.body);
+  
+  const obj={
+    name:req.body.nameC,
+    password:req.body.PasswordC,
+    imageUrl:req.body.imageC,
+    key:req.body.keyC,
+    todos:[{
+      name:'',
+      todo:''
+    }],
+   
+    
+    type:'company'
+  }
+  console.log(obj)
+const newCompany= new Company(obj)
+newCompany.save((err,result)=>{
+  res.send(result)
+})
+  
+})
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
