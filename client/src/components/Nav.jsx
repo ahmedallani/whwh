@@ -31,4 +31,4 @@ class Nav extends React.Component {
 }
 
 
-export default Nav
+export default Nav // __You should let Nav Component take care of nav bar only

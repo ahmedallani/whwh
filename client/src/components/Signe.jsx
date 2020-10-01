@@ -37,13 +37,14 @@ class Signe extends React.Component{
         }
         return hash;
     }
-        submit(e){
+    submit(e){
             e.preventDefault()
             const {name,password,image,key}=this.state
-           
+            // __hashCode on the server not on the client
             const Password=this.hashCode(password)
            
             console.log({name,Password,image,key})
+        // __properties should be the same as the ones in the database
         axios.post('/post',{name,Password,image,key})
         
     }
@@ -52,6 +53,7 @@ class Signe extends React.Component{
         const {nameC,passwordC,imageC,keyC}=this.state
         const PasswordC=this.hashCode(passwordC)
         console.log({nameC,passwordC,imageC,keyC})
+        // __properties should be the same as the ones in the database
     axios.post('/postC',{nameC,PasswordC,imageC,keyC})
 
     }
@@ -105,6 +107,7 @@ class Signe extends React.Component{
             <input type="new-password"  onChange={this.handleChange.bind(this)}
             name='keyC' value={this.state.keyC}/><br></br>
             <button onClick={this.submitC.bind(this)}>sign up company</button>
+            {/* if you have an account login */}
             <p>if you dont have an acount <a onClick={this.log}>log in</a></p>
             <br/>
             <button onClick={this.togo}>if you want to connect as a user click me </button>

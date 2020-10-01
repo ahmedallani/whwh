@@ -1,6 +1,6 @@
 const db = require("./connect.js");
-const User = require("./user.js");
-const Company = require("./company.js")
+const User = require("./User.js"); // __you import user instead  of User
+const Company = require("./Company.js")
 const Chat = require("./chatschema.js")
 
 const sampleUser = [
@@ -26,6 +26,7 @@ const sampleCompany = [
         password: "whwh1",
         imageUrl: "",
         key: "azerty123",
+        // __another reason why name must be unique
         todos: [
           {
             name: "wala",

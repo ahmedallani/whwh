@@ -7,7 +7,7 @@ const CompanySchema = new mongoose.Schema(
     name: String,
     password: String,
     imageUrl: String,
-    key: String,
+    key: String,// __key not secure enough
     todos: [
       {
         name: String,
